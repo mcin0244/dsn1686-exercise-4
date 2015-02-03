@@ -168,3 +168,80 @@ section:nth-of-type(odd){
   -webkit-transition: none;
   transition: none;
 }
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 22px;
+  top: 0;
+  width: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+@media only screen and (max-width : 38em) {
+nav {
+  width: 100%;
+}
+
+nav ul {
+  padding-top: 10px;
+  margin-bottom: 22px;
+  display: hidden;
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
+}
+
+nav ul li {
+  width: 100%;
+  padding: 7px 0;
+  margin: 0;
+}
+
+nav ul a {
+  color: $blue;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+
+.open-nav {
+  max-height: 400px !important;
+  nav ul {
+    display: block;
+  }
+}
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.mobile-toggle {
+  display: block;
+  margin: 2em;
+  position: fixed;
+}
+
+.mobile-toggle {
+    display: block;
+}
+
+.mobile-toggle span {
+  width: 40px;
+  height: 5px;
+  margin-bottom: 8px;
+  border-radius: 1000px;
+  background: $blue;
+  display: block;
+}
+
+}
