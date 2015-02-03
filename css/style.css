@@ -15,7 +15,7 @@
   }
 }
 */
-/* line 22, /Users/User/Desktop/exercise-3-starter/scss/components/push-menu-custom */
+/* line 22, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/push-menu-custom */
 [class^="i-"]:before, [class*=" i-"]:before {
   font-family: "push-menu-custom";
   font-style: normal;
@@ -40,12 +40,12 @@
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
 
-/* line 53, /Users/User/Desktop/exercise-3-starter/scss/components/push-menu-custom */
+/* line 53, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/push-menu-custom */
 .i-menu:before {
   content: '\e800'; }
 
 /* '' */
-/* line 54, /Users/User/Desktop/exercise-3-starter/scss/components/push-menu-custom */
+/* line 54, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/push-menu-custom */
 .i-close:before {
   content: '\e801'; }
 
@@ -70,27 +70,130 @@
   width: device-width;
   scale: 1; }
 
-/* line 7, /Users/User/Desktop/exercise-3-starter/scss/components/main */
+/* line 7, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/main */
 html {
   box-sizing: border-box;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%; }
 
-/* line 16, /Users/User/Desktop/exercise-3-starter/scss/components/main */
+/* line 16, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/main */
 *, *:before, *:after {
   box-sizing: inherit; }
 
-/* line 21, /Users/User/Desktop/exercise-3-starter/scss/components/main */
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0; }
-  /* line 25, /Users/User/Desktop/exercise-3-starter/scss/components/main */
-  body.noscript .close-btn {
-    display: none; }
+/* line 20, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/main */
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  height: 100%;
+  color: #FFF;
+  background: #F6F6F6;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  transition: all 0.3s ease-in-out; }
 
-/* line 30, /Users/User/Desktop/exercise-3-starter/scss/components/main */
+/* line 34, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/main */
+h1, h2 {
+  text-align: center; }
+
+/* line 38, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/main */
+h2 {
+  color: #1abc9c; }
+
+/* line 42, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/main */
+.container {
+  width: 1000px;
+  max-width: 100%;
+  margin: auto; }
+
+/* line 48, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/main */
 header {
-  padding: 0 1em;
-  position: relative; }
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #1abc9c; }
+  /* line 54, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/main */
+  header h1 {
+    font-size: 50px;
+    font-weight: 300;
+    margin: auto;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0); }
+
+/* line 68, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/main */
+nav {
+  background: #FFF;
+  clear: both;
+  overflow: hidden; }
+  /* line 73, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/main */
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    /* line 78, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/main */
+    nav ul li {
+      float: left; }
+      /* line 81, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/main */
+      nav ul li a {
+        display: block;
+        padding: 25px 20px;
+        text-decoration: none;
+        color: #1abc9c;
+        font-weight: normal; }
+        /* line 88, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/main */
+        nav ul li a:hover {
+          background: #F6F6F6; }
+
+/* line 96, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/main */
+section {
+  width: 100%;
+  height: 50%;
+  color: #1abc9c; }
+  /* line 102, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/main */
+  section article {
+    padding: 50px 0; }
+
+/* line 107, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/main */
+section:nth-of-type(odd) {
+  background: #FFF; }
+
+/* line 111, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/main */
+h2 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  margin-right: auto;
+  margin-left: auto;
+  letter-spacing: 1px;
+  padding: 0.5em;
+  color: #1abc9c;
+  text-transform: uppercase; }
+
+/* line 123, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/main */
+p {
+  font-family: 'Lato', sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0.5em;
+  color: #CCC; }
+
+/*helper*/
+/* line 132, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/main */
+.isFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 0 #eee; }
+
+/* line 139, /Users/emma-lee/Documents/Year 4/Semester Two/Web Development V/exercise-4/dsn1686-exercise-4/scss/components/main */
+.whiteSpace {
+  margin-top: 60px;
+  transition: none; }

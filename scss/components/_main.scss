@@ -17,19 +17,127 @@ html {
 	box-sizing: inherit;
 }
 
+html, body{
+ margin: 0px;
+ padding: 0px;
+ font-family: 'Lato',sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  height: 100%;
+  color: $white;
+  background: $light-grey;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
 
-body{
-  font-family: sans-serif;
-  @include zero;
-  // Hides close button if there is no js
-  &.noscript .close-btn{
-    display: none;
+h1, h2{
+  text-align: center;
+}
+
+h2{
+  color: $blue;
+}
+
+.container{
+  width: 1000px;
+  max-width: 100%;
+  margin: auto;
+}
+
+header{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: $blue;
+  
+  h1{
+    font-size: 50px;
+    font-weight: 300;
+    margin: auto;
+    padding: 0;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
   }
 }
 
-header {
-  padding: 0 1em;
-  position: relative;
+nav{
+  background: $white;
+  clear: both;
+  overflow: hidden;
+  
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    li{
+      float: left;
+      
+      a{
+        display: block;
+        padding: 25px 20px;
+        text-decoration: none;
+        color: $blue;
+        font-weight: normal;
+        
+        &:hover{
+          background: $light-grey;
+        }
+      }
+    }
+  }
 }
 
+section{
+  
+  width: 100%;
+  height: 50%;
+  color: $blue;
+  
+  article{
+    padding: 50px 0;
+  }
+}
 
+section:nth-of-type(odd){
+  background: $white;
+}
+
+  h2{
+  font-family: $lato;
+  text-align: center;
+  font-weight: 400;
+  margin-right: auto;
+  margin-left: auto;
+  letter-spacing: 1px;
+  padding: .5em;
+  color: $blue;
+  text-transform: uppercase;
+  }
+
+  p{
+  font-family: $lato;
+  margin-right: auto;
+  margin-left: auto;
+  padding: .5em;
+  color: $grey;
+  }
+
+/*helper*/
+.isFixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 0 #eee;
+}
+.whiteSpace{
+  margin-top: 60px;
+  -webkit-transition: none;
+  transition: none;
+}
